@@ -1,0 +1,13 @@
+<h1>The Score Page</h1>
+<p><%= params[:my_score] %></p>
+<p><%= @attempt %></p>
+<% if @trans %>
+    <p>Yes, your word is in the english dictionary.</p>
+<% else%>
+    <p>Ohh no, your word is NOT in the english dictionary.</p>
+<% end %>
+
+<p><%= @game_score %></p>
+
+
+<%= link_to "Play again", new_path %>
